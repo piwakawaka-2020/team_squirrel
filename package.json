@@ -1,0 +1,31 @@
+{
+  "name": "team_squirrel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rae-Kwon/team_squirrel.git"
+  },
+  "keywords": [],
+  "author": "Laniyuk, Tom, Richard, Vincent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rae-Kwon/team_squirrel/issues"
+  },
+  "homepage": "https://github.com/Rae-Kwon/team_squirrel#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.1",
+    "knex": "^0.20.13",
+    "pokedex.js": "^3.3.2",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
