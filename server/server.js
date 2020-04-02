@@ -1,5 +1,6 @@
 const express = require('express')
 const hbs = require('express-handlebars')
+const userProfileRoutes = require ('../routes/user_profile')
 
 const server = express()
 
@@ -12,6 +13,6 @@ server.use(express.static('public'))
 
 // Routes
 
-
+server.use('/user_profile/', userProfileRoutes)
 
 module.exports = server;
