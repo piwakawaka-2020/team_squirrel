@@ -4,7 +4,8 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
-    "dev": "nodemon ./server/index.js"
+    "dev": "nodemon ./server/index.js",
+    "postinstall": "knex migrate:latest"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,13 @@
     "knex": "^0.20.13",
     "pg": "^8.0.0",
     "pokedex.js": "^3.3.2",
-    "sqlite3": "^4.1.1",
-    "postinstall": "knex migrate:latest"
+    "sqlite3": "^4.1.1"
+
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
   }
 }
+//postinstall goes to scripts
+//also you need start script "node index"
+//"start":"node index"
