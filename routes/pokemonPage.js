@@ -37,6 +37,9 @@ router.post('/:id', (req,res)=>{
       res.redirect(`/profile/${userId}`)
     })
       })
+      .catch(err => {
+        console.log(err.message)
+      })
 })
 
 module.exports = router;
