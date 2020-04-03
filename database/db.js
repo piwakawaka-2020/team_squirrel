@@ -40,6 +40,5 @@ function addPokemonIdToUsers(userId, pokemonId,db = database) {
 function addUserIdToPokemons(userId, pokemonId, db = database) {
   return db('pokemons')
     .where('id', pokemonId)
-    .first()
     .update({user_id: userId})
 }
