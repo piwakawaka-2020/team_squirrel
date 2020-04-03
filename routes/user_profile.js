@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const db = require("../dbProfiles")
+const db = require("../database/dbProfiles")
 
 router.get('/:id', (req, res) =>{
     const id = req.params.id 

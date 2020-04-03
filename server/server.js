@@ -14,10 +14,10 @@ server.use(express.urlencoded({extended: true}))
 server.use(express.static('public'))
 
 // Routes
-server.use('/info', infoRoutes)
-server.use('/user_profile/', userProfileRoutes)
+server.use('/pokemon/info', infoRoutes)
+server.use('/profile/', userProfileRoutes)
 server.use('/', landingPageRoutes)
-server.use('/pokemonPage', pokemonsPageRoute)
+server.use('/pokemon', pokemonsPageRoute)
 
 
 module.exports = server;
