@@ -1,0 +1,141 @@
+html{
+  /* background-color: rgb(232, 0 , 45); */
+  background-color: brown;
+}
+
+/* HOME PAGE */
+
+.logo{
+  width: 50%;
+}
+.mainSelected{
+  border: outset 1px;
+  background: linear-gradient(gray, gainsboro);
+  border-radius: 15px;
+  width: 50%;
+}
+
+.mainSelected form{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+}
+
+.mainSelected button{
+  margin-top: 10px;
+  width: 20%;
+}
+
+/* MAIN POKEDEX */
+
+.circleLine{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.bigCircle{
+  border: outset 2px;
+  background: linear-gradient(cadetblue, whitesmoke);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.smallCircle {
+  border: outset 1px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 20px;
+}
+
+.one{
+  background-color: red;
+}
+
+.two{
+  background-color: yellow;
+}
+
+.three{
+  background-color: green;
+}
+/* POKEMON PAGE */
+
+.pokemons{
+  border-radius: 15px;
+  padding: 15px;
+  margin: auto;
+  background: linear-gradient(to left, gray, gainsboro);
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pokemons table td:nth-of-type(1){
+  padding: 0px;
+}
+.pokemons table td{
+  text-align: center;
+}
+
+.type{
+  display: flex;
+  border: outset 0.5px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+}
+.fire{
+  background-color: orangered;
+}
+.grass{
+  background-color: palegreen;
+}
+.water{
+  background-color: dodgerblue;
+}
+.bug{
+  background-color: goldenrod;
+}
+.flying{
+  background-color: greenyellow;
+}
+.normal{
+  background-color: gainsboro;
+}
+
+
+
+.pokemonSelectForm fieldset{
+  display: flex;
+  width: 25%;
+}
+
+.pokemonSelectForm legend{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.pokemonSelectForm fieldset table td{
+  font-size: 1.2rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#choose {
+  margin: auto
+}
+/* .radio input[type=radio]{
+  display:none
+}
+
+#ash {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  background-image: './images/characters/ash.png';
+  background: image'./images/characters/ash.png';
+} */

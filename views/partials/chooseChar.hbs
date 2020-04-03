@@ -1,23 +1,27 @@
-<h1>choose your dude</h1>
-<form class="form" action="/" method="post">
-    <label for=''>
-        Ash
-        <input type="radio" id="ash" name="pic_link" value="characters/ash.png">
-    </label>
-    <label for=''>
-        James
-        <input type="radio" id="james" name="pic_link" value="characters/james.png">
-    </label>
-    <label for=''>
-        Jessie
-        <input type="radio" id="jessie" name="pic_link" value="characters/jessie.png">
-    </label>
-    <label for=''>
-        Misty
-        <input type="radio" id="misty" name="pic_link" value="characters/misty.png">
-    </label>
-    <label for='username'>
-         <input type="text" id="username" name="name" value="Brock">
-    </label>
-    <input type="submit" value="Submit">
-</form>
+<img class="logo animated bounceIn slow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="POKEMON LOGO">
+<h1>Choose your Gym Master</h1>
+<div class="mainSelected">
+    <form class="form" action="/" method="post" id="choose">
+        <label for='ash' class='radio' id = 'ash'>
+            Ash:
+            <input type="radio" id="ash" name="pic_link" value="/images/characters/ash.png">
+        </label>
+        <label for='james' class='radio' id = 'james'>
+            James:
+            <input type="radio" id="james" name="pic_link" value="/images/characters/james.png">
+        </label>
+        <label for='jessie' class='radio' id = 'jessie'>
+            Jessie:
+            <input type="radio" id="jessie" name="pic_link" value="/images/characters/jessie.png">
+        </label>
+        <label for='misty' class='radio' id = ' misty'>
+            Misty:
+            <input type="radio" id="misty" name="pic_link" value="/images/characters/misty.png">
+        </label>
+        <label for='username' >
+            Your name:
+            <input type="text" id="username" name="name" value="Brock">
+        </label>
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>

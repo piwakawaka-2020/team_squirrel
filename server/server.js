@@ -15,7 +15,7 @@ server.use(express.static('public'))
 
 // Routes
 server.use('/pokemon/info', infoRoutes)
-server.use('/profile/', userProfileRoutes)
+server.use('/profile', userProfileRoutes)
 server.use('/', landingPageRoutes)
 server.use('/pokemon', pokemonsPageRoute)
 

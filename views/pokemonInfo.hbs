@@ -1,8 +1,10 @@
-{{>pokemonName}}
 
-{{>pokemonImage}}
+<h1>{{pokemon.pokemon_name}}</h1>
 
-{{>pokemonType}}
+<img src="{{pokemon.big_image}}" alt="An image of {{pokemon.pokemon_name}}">
+
+
+<img src="../images/types/{{pokemon.type}}.png" alt="An image of the {{pokemon.type}} type icon">
 
 <h2>Info: </h2>
-{{>pokemonInfo}}
+<p>{{pokemon.pokemon_info}}</p>

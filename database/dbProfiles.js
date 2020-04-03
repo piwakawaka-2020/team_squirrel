@@ -3,13 +3,18 @@ const config = require('../knexfile')[environment]
 const connection = require('knex')(config)
 
 module.exports = {
-  getUser: getUser
- 
+  getUser: getUser,
+  getPokemon: getPokemon
+}
+
+function getPokemon(id, db = connection) {
+  return db('pokemons')
+    .where('id', id)
+    .first()
 }
 
 function getUser (id, db =connection) {
   return db('users')
-        .where('users.id', id)
-        .join('pokemons', 'users.id', '=', 'pokemons.id')
-        .first()
+    .where('id', id)
+    .first()
 }

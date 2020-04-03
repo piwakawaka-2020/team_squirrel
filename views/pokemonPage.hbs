@@ -1,0 +1,36 @@
+
+<div class="pokemons">
+  {{#each pokemons}}
+  <table>
+    <tr>
+      <td><img src="{{small_image}}" alt="This is {{pokemon_name}}"></td>
+    </tr>
+    <tr>
+      <td><p>{{pokemon_name}}</p></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="../images/types/{{type}}.png" alt="{{type}} badge">
+      </td>
+    </tr>
+  </table>
+  {{/each}}
+</div>
+
+<div class="pokemonSelectForm">
+  <form action="/pokemon/{{id}}" method="POST">
+    <fieldset>
+      <legend>Choose your pokemon</legend>
+      {{#each pokemons}}
+      <table>
+        <tr>
+          <td><label for="{{pokemon_name}}">{{pokemon_name}}</td>
+          <td><input type="radio" name="id" value="{{id}}" class="pokemon"></label></td>
+        </tr>
+      </table>
+      {{/each}}
+      <br>
+      <button type="submit">I choose you</button>
+    </fieldset>
+  </form>
+</div>
