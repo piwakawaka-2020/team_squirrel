@@ -34,7 +34,6 @@ function deleteSelectedPokemon(isSelected, db = database){
 function addPokemonIdToUsers(userId, pokemonId,db = database) {
   return db('users')
     .where('id', userId)
-    .first()
     .update({pokemon_id: pokemonId})
 }
 
