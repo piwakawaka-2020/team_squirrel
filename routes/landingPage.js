@@ -10,7 +10,7 @@ router.post('/', (req,res) => {
     dbFunc.addData(req.body).then(userId =>{
         //redirect to pokemonpage
         console.log("This is for userId = ", userId[0])
-        res.redirect('/pokemon/' + userId[0])
+        return res.redirect('/pokemon/' + userId[0])
         })
         .catch(err => {
             console.log(err.message)
