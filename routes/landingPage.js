@@ -7,7 +7,7 @@ router.get('/', (req,res)=> {
     res.render(template)
 })
 router.post('/', (req,res) => {
-    dbFunc.addData(req.body).then(dbFunc.viewData).then(userId =>{
+    dbFunc.addData(req.body).then(userId =>{
         console.log(req.body.pic_link)
         //redirect to pokemonpage
         res.redirect('/pokemon/' + userId)
