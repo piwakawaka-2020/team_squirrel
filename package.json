@@ -22,8 +22,10 @@
     "express": "^4.17.1",
     "express-handlebars": "^4.0.1",
     "knex": "^0.20.13",
+    "pg": "^8.0.0",
     "pokedex.js": "^3.3.2",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.1.1",
+    "postinstall": "knex migrate:latest"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
