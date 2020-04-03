@@ -1,6 +1,8 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 
+const pokemonsPageRoute = require('../routes/pokemonPage')
+
 const server = express()
 
 // Middleware
@@ -12,6 +14,7 @@ server.use(express.static('public'))
 
 // Routes
 
+server.use('/pokemonPage', pokemonsPageRoute)
 
 
 module.exports = server;
