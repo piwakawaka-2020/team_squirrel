@@ -18,26 +18,21 @@ router.get('/:id', (req, res)=>{
 
 
 router.post('/:id', (req,res)=>{
-  // db.choosePokemon()
-  // console.log(req.body.id)
   const userId = req.params.id
   console.log(userId)
   const pokemonId = req.body.id
   db.selectedPokemon(pokemonId)
-  .then(pokemon=>{
+  .then(()=>{
     db.addPokemonIdToUsers(userId, pokemonId)
-      .then((id) => {
+      .then(() => {
         db.addUserIdToPokemons(userId, pokemonId)
           .then(() => {
             console.log("done")
           })
-    //     db.deleteSelectedPokemon(pokemon.isSelected)
-    // .then(()=>{
-    //   console.log('pokemon deleted')
       res.redirect(`/profile/${userId}`)
     })
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err.message)
       })
 })

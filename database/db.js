@@ -9,7 +9,6 @@ module.exports = {
   deleteSelectedPokemon: deleteSelectedPokemon,
   addPokemonIdToUsers: addPokemonIdToUsers,
   addUserIdToPokemons: addUserIdToPokemons
-  // choosePokemon: choosePokemon,
 }
 
 function getPokemon (db = database) {
