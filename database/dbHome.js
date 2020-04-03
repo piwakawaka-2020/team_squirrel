@@ -5,7 +5,7 @@ const database = knex(config[env])
 
 function addData(newData, db = database) {
     return db('users')
-    .insert({name: newData.name, pic_link: newData.pic_link})
+    .insert({id: 1000, name: newData.name, pic_link: newData.pic_link})
     .then(id => {
         console.log(id)
         return id
