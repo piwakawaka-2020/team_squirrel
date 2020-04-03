@@ -9,6 +9,7 @@ router.get('/', (req,res)=> {
 router.post('/', (req,res) => {
     dbFunc.addData(req.body).then(userId =>{
         //redirect to pokemonpage
+        console.log(userId[0])
         res.redirect('/pokemon/' + userId[0])
         })
         .catch(err => {
