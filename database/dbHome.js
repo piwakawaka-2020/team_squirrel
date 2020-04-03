@@ -4,7 +4,9 @@ const env = process.env.NODE_ENV || 'development'
 const database = knex(config[env])
 
 function addData(newData, db = database) {
-    return db('users').insert({name: newData.name, pic_link: newData.pic_link})
+    return db('users')
+    .insert({name: newData.name, pic_link: newData.pic_link})
+    .then(id => id)
 }
 
 function showData(db=database) {
