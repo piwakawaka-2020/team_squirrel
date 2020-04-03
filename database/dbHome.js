@@ -10,6 +10,9 @@ function addData(newData, db = database) {
         console.log("This is the addData log = ", id)
         return id
     })
+    .catch(err => {
+        console.log(err.message)
+    })
 }
 
 function showData(db=database) {
